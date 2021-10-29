@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #071a1b;
+  color: #5c7e7a;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  color: #f2dfe1;
+}
+input {
+  padding: 10px;
+  border: 1px solid #efbec7;
+  background-color: #f2dfe1;
+  border-radius: 3px;
+  color: #071a1b;
+  width: 300px;
+}
+#result {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 800;
+
+  margin: 30px;
+}
+
+#result span {
+  animation: anim 1s;
+  animation-timing-function: ease-in-out;
+
+  display: inline-block;
+}
+/* Animation One */
+@keyframes anim {
+  0% {
+    filter: blur(10px);
+    opacity: 0;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(2);
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    transform: scale(1);
+  }
+}
